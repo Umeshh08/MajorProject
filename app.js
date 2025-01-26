@@ -7,7 +7,6 @@ const express = require("express");
 const app = express();
 const mongoose = require('mongoose');
 const Listing = require('./models/listings.js');
-
 const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
@@ -43,9 +42,9 @@ app.use(express.static('public'))
 
 
 
-// app.get('/', (req, res) => {
-//     res.send('i am root');
-// });
+app.get('/', (req, res) => {
+    res.redirect('/listings');
+});
 const store = MongoStore.create({
     mongoUrl : dbUrl,
     crypto: {
