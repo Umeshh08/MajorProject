@@ -2,8 +2,8 @@
 
   <body>
 
-    <div class="row">
-      <div class="col-8 offset-3">
+    <div class="row show-page">
+      <div class="col-8 offset-2">
 
         <h4>
           <%=listing.title%>
@@ -43,7 +43,7 @@
 
       </div>
     </div>
-    <div class="col-9 offset-3">
+    <div class="col-9 offset-2">
     <% if(currUser){ %>
         <h6>Reviews:</h6>
         <form action="/listings/<%= listing._id%>/reviews" method="post">

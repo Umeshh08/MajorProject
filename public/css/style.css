@@ -15,6 +15,7 @@ body{
 }
 .nav-link{
     color: black !important;
+    
 }
 
 /*footer */
@@ -50,7 +51,7 @@ a:hover{
     
     margin-bottom: 2rem;
     border: none !important;
-    margin: 16px;
+    margin: 0px;
 
 }
 
@@ -73,10 +74,34 @@ a:hover{
     box-shadow: 10px black;
     
 }
+/* Adjust margin for smaller screens */
+@media screen and (max-width: 600px) {
+    
+    #card {
+        margin: 0 1rem; /* Reduced margin for small screens */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    #navbarNavAltMarkup{
+        background-color: rgba(255, 255, 255, 0.593);
+        
+    }
+    #filters{
+        margin: 0 !important;
+    }
+    .tax-toggle{
+        display: none !important;
+    }
+    
+}
 .listing-card{
     border: none !important;
     margin-bottom: 3rem;
-
+    border: 2px solid red;
+    
 }
 .listing-link{
     text-decoration: none;
