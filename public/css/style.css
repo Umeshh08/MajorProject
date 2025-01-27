@@ -86,7 +86,7 @@ a:hover{
 
     
     #navbarNavAltMarkup{
-        background-color: rgba(255, 255, 255, 0.593);
+        background-color: rgb(255, 255, 255);
         
     }
     #filters{
@@ -95,12 +95,25 @@ a:hover{
     .tax-toggle{
         display: none !important;
     }
+    .listing-card-show{
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0;
+    }
+    .show-page{
+        margin: 0px !important;
+    }
     
 }
 .listing-card{
     border: none !important;
     margin-bottom: 3rem;
-    border: 2px solid red;
+    
+}
+.listing-card-show{
+    border: none !important;
+    margin-bottom: 3rem;
+    margin: 0 !important;
     
 }
 .listing-link{
