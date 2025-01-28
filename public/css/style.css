@@ -103,7 +103,10 @@ a:hover{
     .show-page{
         margin: 0px !important;
     }
-    
+    .show-card{
+        width: 90% !important;
+        margin: 1.5rem !important;
+    }
 }
 .listing-card{
     border: none !important;
