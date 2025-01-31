@@ -8,20 +8,19 @@
         <h4>
           <%=listing.title%>
         </h4>
-        <div class="card listing-card-show" style="width: 35rem;">
+        <div class="card listing-card-show" style="width: 40rem;">
           <img class="card-img-top show-img" src="<%=listing.image.url %>" alt="Card image cap">
           <div class="card-body">
             <p class="card-text">
-            <p> owned by: <%= listing.owner ? listing.owner.username : 'Unknown' %>
+            <p> Owned By: <%= listing.owner ? listing.owner.username : 'Unknown' %>
             </p>
             <p>
               <%=listing.description %>
             </p>
 
-            <p> &#x20b9;<%=listing.price.toLocaleString("en-IN") %></p>
-
+            <p> Price for One night : &#x20b9;<%=listing.price.toLocaleString("en-IN") %></p>
             <p>
-              <%=listing.location %>
+              Located in <b><%=listing.location %></b>
             </p>
             <p>
               <%=listing.country %>
